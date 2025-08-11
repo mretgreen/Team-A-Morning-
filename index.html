@@ -3,36 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <title>Team A IT Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: sans-serif;
-      background-color: #eef;
-      padding: 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
       color: #333;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+    /* Navigation */
+    nav {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    li {
-      margin-bottom: 10px;
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #3498db;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
+      color: #3498db;
+    }
+    .btn-download {
+      background: #3498db;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .btn-download:hover {
+      background: #2c80b4;
+    }
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(52,152,219,0.9), rgba(52,152,219,0.9)), url('https://via.placeholder.com/1920x800') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .hero .btn {
+      background: white;
+      color: #3498db;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero .btn:hover {
+      background: #f4f4f4;
+    }
+    /* How It Works */
+    .how-it-works {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+    .how-it-works h2 {
+      font-size: 2rem;
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .feature {
+      flex: 1;
+      min-width: 250px;
+      padding: 20px;
+    }
+    .feature h3 {
+      margin-top: 10px;
+      color: #333;
+    }
+    .feature p {
+      color: #666;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
-  <h1>Team A IT Services</h1>
-  <img src="team-site/team-logo.png" alt="Team A Logo" style="width: 500px; height: auto;">
-  <h2>Team A's Résumé's</h2>
-  <ul>
-    <li><a href="https://jgortiz96.github.io/Jesus_Ortiz_Resume_Site/">Jesus Ortiz</a></li>
-    <!-- Add other teammates' resume URLs here -->
-  </ul>
-  
-  <h2>Team Info</h2>
-  <p>Team A's Cloud Capstone project is to design and deploy a cloud-based web application for an IT services business page. 
-     The project involves a team of up to 4 students, each with a specific role: 
-     Robert Roberts: Cloud Architect/Team Lead, Jesus Ortiz: App & Front-End Specialist, Eric Green: DevOps & Backend Engineer, and Jose Leon: Security & Network Engineer. </p>
+
+  <nav>
+    <div class="logo">Team A</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="btn-download">Download</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Providing Better IT Services</h1>
+    <p>Team A's Cloud Capstone project is to design and deploy a cloud-based web application for an IT services business page.</p>
+    <a href="#" class="btn">Learn More</a>
+  </section>
+
+  <section class="how-it-works" id="about">
+    <h2>How It Works</h2>
+    <p>Our project is powered by teamwork, each member bringing unique skills to ensure the success of our IT services solution.</p>
+    <div class="features">
+      <div class="feature">
+        <img src="team-site/team-logo.png" alt="Team Logo" style="width:80px;">
+        <h3>Robert Roberts</h3>
+        <p>Cloud Architect & Team Lead</p>
+      </div>
+      <div class="feature">
+        <h3><a href="https://jgortiz96.github.io/Jesus_Ortiz_Resume_Site/">Jesus Ortiz</a></h3>
+        <p>App & Front-End Specialist</p>
+      </div>
+      <div class="feature">
+        <h3>Eric Green</h3>
+        <p>DevOps & Backend Engineer</p>
+      </div>
+      <div class="feature">
+        <h3>Jose Leon</h3>
+        <p>Security & Network Engineer</p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
