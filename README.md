@@ -14,6 +14,7 @@ https://mretgreen.github.io/Team-A-Morning-/
   ├── deployment-plan.md
   ├── security.md
   └── glossary.md
+  
 # Backend Documentation (Azure)
 
 This folder contains all documentation for the planned backend hosted on Microsoft Azure.
@@ -25,6 +26,37 @@ This folder contains all documentation for the planned backend hosted on Microso
 - [Deployment Plan](deployment-plan.md)
 - [Security](security.md)
 
+
+---
+**Last Updated:** YYYY-MM-DD
+
+
+# Architecture Overview
+
+## High-Level Diagram
+```mermaid
+graph TD
+    ClientApp[Frontend] --> API[Azure App Service API]
+    API --> DB[Azure SQL Database]
+    API --> Blob[Azure Blob Storage]
+    API --> Queue[Azure Service Bus]
+    Queue --> Worker[Azure Functions]
+
+
+---
+
+## **📄 azure-services.md**
+```markdown
+# Azure Services Inventory
+
+| Service Name         | Type                  | Purpose                               | SKU / Tier | Region  | Notes |
+|----------------------|-----------------------|----------------------------------------|------------|---------|-------|
+| Backend API          | Azure App Service     | Hosts REST API backend                 | P1V2       | East US | Node.js 18 |
+| Database             | Azure SQL Database    | Stores application data                | S2         | East US | Geo-redundant backup |
+| Storage              | Azure Blob Storage    | File and static asset storage          | Hot Tier   | East US | Private endpoint enabled |
+| Messaging            | Azure Service Bus     | Message queue for async processing     | Standard   | East US | |
+| Authentication       | Azure AD B2C          | Identity and access management         | N/A        | Global  | |
+| Secrets Management   | Azure Key Vault       | Secure storage of API keys & secrets   | Standard   | East US | |
 
 ---
 **Last Updated:** YYYY-MM-DD
