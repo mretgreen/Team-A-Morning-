@@ -5,6 +5,7 @@ App & Front End Engineer: Jesus Ortiz
 Security & Network Engineer: Jose Leon
 DevOps & Backend Engineer: Eric Green
 https://mretgreen.github.io/Team-A-Morning-/
+
 /docs
   ├── README.md
   ├── architecture-overview.md
@@ -23,7 +24,7 @@ This folder contains all documentation for the planned backend hosted on Microso
 - [API Design](api-design.md)
 - [Deployment Plan](deployment-plan.md)
 - [Security](security.md)
-- [Glossary](glossary.md)
+
 
 ---
 **Last Updated:** YYYY-MM-DD
