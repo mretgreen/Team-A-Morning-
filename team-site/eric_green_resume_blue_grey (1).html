@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eric Green — Resume</title>
+  <style>
+    :root {
+      --blue: #1e3d59;
+      --light-blue: #3f6ea1;
+      --grey: #6b7280;
+      --light-grey: #f4f6f8;
+      --white: #ffffff;
+      --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; font-family: var(--font-sans); background: var(--light-grey); color: #0f1724; }
+
+    body {
+      padding: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .resume {
+      width: 100%;
+      max-width: 900px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+    }
+
+    header {
+      grid-column: 1 / -1;
+      padding: 28px 32px;
+      background: var(--blue);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .name { font-size: 28px; font-weight: 700; }
+    .subhead { color: var(--light-grey); font-size: 14px; }
+
+    .left { padding: 28px 32px; }
+    .right { background: #f9fafb; padding: 28px 24px; border-left: 1px solid #e5e7eb; }
+
+    h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      color: var(--blue);
+      border-bottom: 2px solid var(--light-grey);
+      padding-bottom: 4px;
+    }
+
+    .section { margin-bottom: 18px; }
+    .job { margin-bottom: 14px; }
+    .job .title { font-weight: 600; color: var(--light-blue); }
+    .job .company { color: var(--grey); font-size: 13px; }
+    .date { color: var(--grey); font-size: 13px; }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin-bottom: 6px; line-height: 1.45; }
+
+    .skill-pill {
+      display: inline-block;
+      background: var(--light-blue);
+      color: var(--white);
+      border-radius: 999px;
+      padding: 6px 10px;
+      margin: 6px 6px 0 0;
+      font-size: 13px;
+    }
+
+    .contact a { color: var(--light-blue); text-decoration: none; }
+
+    @media (max-width: 820px) {
+      .resume { grid-template-columns: 1fr; }
+      .right { border-left: none; border-top: 1px solid #e5e7eb; }
+    }
+
+    @media print {
+      body { padding: 0; }
+      .resume { box-shadow: none; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <article class="resume">
+    <header>
+      <div>
+        <div class="name">Eric Green</div>
+        <div class="subhead">Georgetown, TX — (254) 312-1376 — mretgreen@gmail.com — LinkedIn: /in/eric-green-382ba4151</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700;color:var(--light-grey)">Experienced Learning &amp; Partner Leader</div>
+        <div style="font-size:12px;color:var(--light-grey)">Cloud partner enablement • Curriculum &amp; learning design • Operations &amp; youth programs</div>
+      </div>
+    </header>
+
+    <section class="left">
+      <div class="section">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+          <div class="title">Site Director</div>
+          <div class="company">YMCA of Central Texas — Georgetown, TX <span class="date">Jan 2024 – Present</span></div>
+          <ul>
+            <li>Directed daily operations of afterschool and summer youth programs; ensured alignment with YMCA mission and licensing standards.</li>
+            <li>Managed a team of up to 12 staff including training, scheduling, and performance evaluations to maintain high program quality.</li>
+            <li>Implemented curriculum and enrichment activities promoting academic, social, and emotional growth.</li>
+            <li>Built strong relationships with parents, school staff, and community partners to support program visibility and student success.</li>
+            <li>Maintained compliance with Texas HHSC Child Care Licensing regulations.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="title">Learning Consultant</div>
+          <div class="company">Indigo Slate — Georgetown, TX <span class="date">Feb 2023 – May 2024</span></div>
+          <ul>
+            <li>Designed and delivered digital learning solutions for enterprise clients, aligning instructional strategy with business objectives.</li>
+            <li>Led needs assessments and stakeholder consultations to develop scalable, learner-centric content using Microsoft Power Platform and other tools.</li>
+            <li>Translated complex technical topics into engaging eLearning modules, interactive experiences, and job aids.</li>
+            <li>Measured learning impact through analytics and continuous improvement cycles.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="title">Channel Account Specialist</div>
+          <div class="company">Amazon Web Services — Austin, TX <span class="date">Jan 2022 – Jan 2023</span></div>
+          <ul>
+            <li>Managed relationships with ISVs and consulting partners to drive adoption and revenue through AWS Marketplace.</li>
+            <li>Provided onboarding support, operational guidance, and sales enablement to accelerate time-to-market.</li>
+            <li>Delivered data-driven insights to optimize listing performance and identify upsell opportunities.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="title">Sr. Partner Development Manager</div>
+          <div class="company">Amazon Web Services — Austin, TX <span class="date">Jun 2018 – Dec 2021</span></div>
+          <ul>
+            <li>Led partner development and growth initiatives across ISVs, SIs, and MSPs; drove joint go-to-market programs and co-selling motions.</li>
+            <li>Enabled partners through APN programs, business planning, and revenue-driving initiatives.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="title">Special Education Middle School Teacher</div>
+          <div class="company">Liberty Hill ISD — Liberty Hill, TX <span class="date">Sep 2023 – Jan 2025</span></div>
+          <ul>
+            <li>Managed a caseload of 12 students; developed IEPs and used evidence-based practices to differentiate instruction across core subjects.</li>
+            <li>Implemented PBIS and reduced disciplinary referrals by 65%.</li>
+            <li>Provided professional development support to peers on special education compliance and inclusive strategies.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="title">Career Counselor / Operations Manager / System Administrator</div>
+          <div class="company">United States Army — Multiple locations <span class="date">Apr 2008 – Dec 2017</span></div>
+          <ul>
+            <li>Advised Soldiers on career development; led retention initiatives exceeding goals and supervised counseling teams.</li>
+            <li>Directed operations and mission planning for units; managed logistics, personnel, and safety protocols.</li>
+            <li>Led IT operations, supervised teams of IT specialists, and managed systems including Active Directory, Exchange, Cisco networking, and virtualization platforms.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <div class="job">
+          <div class="title">Liberty University — Lynchburg, VA</div>
+          <div class="company">Bachelor of Arts, Interdisciplinary Studies (Communications &amp; Psychology) <span class="date">Graduated May 2019</span></div>
+        </div>
+        <div class="job">
+          <div class="title">Grand Canyon University — Phoenix, AZ</div>
+          <div class="company">Human Services: Life Coaching Certification <span class="date">Graduated Oct 202?</span></div>
+        </div>
+        <div class="job">
+          <div class="title">Cybertex Institute — Austin, TX</div>
+          <div class="company">Network Engineer Program <span class="date">Projected Graduation Nov 2025</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Additional</h2>
+        <ul>
+          <li><strong>Technical Skills:</strong> Salesforce, CRM tools, Tableau, Computer hardware, Cloud concepts, Modern AI, Cybersecurity, IoT</li>
+          <li><strong>Certifications &amp; Training:</strong> Symbis Coach, Mental Health First Aid, uCertify (A+, Network+, Linux+, Server+), CPR/First Aid, Executive Director Credential Childcare</li>
+        </ul>
+      </div>
+    </section>
+
+    <aside class="right">
+      <div class="section contact">
+        <h2>Contact</h2>
+        <div class="subhead">Georgetown, TX</div>
+        <div style="margin-top:8px">
+          (254) 312-1376<br>
+          <a href="mailto:mretgreen@gmail.com">mretgreen@gmail.com</a><br>
+          <a href="https://www.linkedin.com/in/eric-green-382ba4151" target="_blank">LinkedIn /in/eric-green-382ba4151</a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Core Skills</h2>
+        <div>
+          <span class="skill-pill">Learning Design</span>
+          <span class="skill-pill">Partner Enablement</span>
+          <span class="skill-pill">Project Management</span>
+          <span class="skill-pill">Operations</span>
+          <span class="skill-pill">IEP Development</span>
+          <span class="skill-pill">Cybersecurity Basics</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Impact Highlights</h2>
+        <ul>
+          <li>Reduced disciplinary referrals by 65% through PBIS implementation.</li>
+          <li>Exceeded reenlistment objectives by 125% while serving as Career Counselor.</li>
+          <li>Managed teams of 8–20 people across education, operations, and IT functions.</li>
+        </ul>
+      </div>
+    </aside>
+  </article>
+</body>
+</html>
