@@ -6,14 +6,6 @@ Security & Network Engineer: Jose Leon
 DevOps & Backend Engineer: Eric Green
 https://mretgreen.github.io/Team-A-Morning-/
 
-/docs
-  ├── README.md
-  ├── architecture-overview.md
-  ├── azure-services.md
-  ├── api-design.md
-  ├── deployment-plan.md
-  ├── security.md
-  └── glossary.md
   
 # Backend Documentation (Azure)
 
